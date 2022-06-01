@@ -1,0 +1,26 @@
+.main {
+  min-height: 93vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../../Images/LandingBg.jpg);
+  background-position: center;
+  background-size: 1300px 600px;
+}
+.intro-text {
+  width: 5000px;
+  text-align: center;
+  padding-left: 200px;
+}
+.title {
+  font-size: 7vh;
+}
+.caption {
+  font-size: 15px;
+  font-family: segoe UI;
+  font-style: italic;
+  padding-bottom: 50px;
+}
+.buttonContainer {
+  padding-left: 500px;
+  width: 900px;
+}
