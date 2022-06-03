@@ -6,13 +6,16 @@ import {
   Navbar,
   NavDropdown,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <Navbar bg="primary" expand="lg" variant="dark">
         <Container fluid>
-          <Navbar.Brand href="/">NoteIT</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <Link to="/">NoteIT</Link>
+          </Navbar.Brand>
 
           <Nav className="m-auto">
             <Form className="d-flex">
@@ -29,16 +32,14 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action2">My Notes</Nav.Link>
+            <Nav.Link href="/mynotes">
+              <Link to="/mynotes">My Notes</Link>
+            </Nav.Link>
             <NavDropdown title="Aman Kumar" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">My Profile</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                TextUtil
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4">TextUtil</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                LogOut
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action5">LogOut</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Container>
